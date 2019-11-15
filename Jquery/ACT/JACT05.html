@@ -1,0 +1,57 @@
+<html> 
+	<head>
+
+		<title>JACT05</title>
+
+<!--Cree una página web con cinco elementos <h1> y <p> diferentes que representen el título y el resumen de un artículo periodístico. Y tres botones diferentes para cambiar el tamaño de la fuente de texto del contenido en los párrafos impares a pequeño (10px), mediano (15px) o grande (20px) respectivamente.-->
+
+ 		<script type="text/javascript" src="jquery-3.4.1.js"></script> 
+ 	</head>
+	<body>
+		<style type="text/css">
+			.p {font-size: 5px;}
+		</style>
+		<script>
+			$(document).ready(initEvents);
+
+				function initEvents() {
+					$("#b1").click(function() {
+						$("p").css("font-size","10px");
+				});
+				}
+
+				function initEvents() {
+					$("#b2").click(function() {
+						$("p").css("font-size","15px");
+				});
+				}
+
+				function initEvents() {
+					$("#b3").click(function() {
+						$("p").css("font-size","20px");
+				});
+				}
+
+				
+		</script>
+
+		<h1>Titulo 1</h1>
+		<p>o rappa</p>
+
+		<h1>Titulo 2</h1>
+		<p>paralamas do secesso</p>
+
+		<h1>Titulo 3</h1>
+		<p>engenheiros do hawaii</p>
+
+		<h1>Titulo 4</h1>
+		<p>rpm</p>
+
+		<h1>Titulo 5</h1>
+		<p>chiclete com banana</p>
+
+		<input type="button" id="b1" value="10px">
+		<input type="button" id="b2" value="15px">
+		<input type="button" id="b3" value="20px">
+	</body>
+</html> 

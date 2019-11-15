@@ -1,0 +1,51 @@
+<html> 
+	<head>
+
+		<title>JACT04</title>
+
+<!--Crea una página web con dos tablas. Cada mesa con 3 filas. Y escriba un script usando jQuery para cambiar el color de fondo cuando hace clic en una fila y en la primera tabla, y para cambiar el tamaño del texto en la segunda tabla.-->
+
+ 		<script type="text/javascript" src="jquery-3.4.1.js"></script> 
+ 	</head>  
+	<body> 
+
+		<script>
+			$(document).ready(initEvents);  
+
+				function initEvents() { 
+					$("#t1").click(clickT1); 
+					$("#t2").click(clickT2);
+				} 
+				
+				function clickT1() {  
+					$("#t1");
+						$(this).css("background-color","blue");   
+				}
+				function clickT2() {  
+					$("#t2");  
+						$(this).css("font-size","50px");  
+				}
+		</script>
+
+
+		<h3>tabla 1</h2>
+
+		<table> 
+			<tr id="t1">
+				<th>Option number 1</th>  
+				<th>Option number 2</th> 
+				<th>Option number 3</th>  
+			</tr> 
+		</table>
+
+		<h3>tabla 2</h2>
+
+		<table> 
+			<tr id="t2">
+				<th>Option number 1</th> 
+				<th>Option number 2</th>  
+				<th>Option number 3</th> 
+ 			</tr>
+		</table>  
+	</body> 
+</html>

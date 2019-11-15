@@ -1,0 +1,32 @@
+<html> 
+	<head>
+
+		<title>JACT03</title>
+
+<!--Cree una página web con una lista desordenada (<ul>) con 4 elementos de lista diferentes (<li>). Y escriba un script usando jQuery para ocultar el elemento <li> que presiona. Para ocultar un elemento, jQuery nos proporciona el método hide ().-->
+
+ 		<script type="text/javascript" src="jquery-3.4.1.js"></script> 
+  
+ 	</head>
+ 	<body>
+ 		<script>
+ 			
+ 			$(document).ready(initEvents); 
+
+				function initEvents() { 
+   					$("li").click(function(){
+						$(this).hide();
+					});
+				} 
+ 		</script>
+
+ 		<ul>
+ 			<li>1111111111</li>
+ 			<li>2222222222</li>
+ 			<li>3333333333</li>
+ 			<li>4444444444</li>
+ 			<li>5555555555</li>
+	 	</ul>
+
+ 	</body>
+ </html> 

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JACT02</title>
+
+<!--Cree una página web con una tabla de dos filas (<tr>). Y escriba un script usando jQuery para capturar el evento click en las filas de la tabla. Cuando hace clic en una fila, debe cambiar su color de fondo. Use un color diferente para cada fila.-->
+
+		<script src="jquery-3.4.1.js"></script>
+	</head>
+	<body>
+		<script>
+			
+			$(document).ready(initEvents); 
+ 
+				function initEvents() { 
+					$("#t1").click(clickT1); 
+					$("#t2").click(clickT2);
+				} 
+ 
+				function clickT1() { 
+					$("#t1"); 
+						$(this).css("background-color","blue"); 
+				} 
+ 
+				function clickT2() { 
+					$("#t2"); 
+						$(this).css("background-color","red"); 
+				} 
+
+		</script>
+
+		<table>
+			<tr id="t1">
+				<td>ciclano</td>
+				<td>joaquin</td>
+			</tr> 
+			<tr id="t2">
+				<td>cremedental</td>
+				<td>frangofrito</td>
+			</tr> 
+		</table>
+	</body>
+</html>

@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<script type="text/javascript" src="jquery-3.4.1.js"></script>
+		<title>JACT07</title>
+
+<!--Cree una página web con un enlace (<a>) con la propiedad href vacía y tres botones. Escriba un script usando jQuery para establecer un valor diferente para la propiedad href dependiendo del botón en el que hagamos clic. -->
+
+	</head>
+	<body>
+		<script type="text/javascript">
+		
+			$(document).ready(function initEvents() {
+				$("#b1").click(add1);
+ 				$("#b2").click(add2);
+				$("#b3").click(add3);
+			});
+
+				function add1() {
+					$("a").attr("href","https://www.youtube.com/");
+				}
+				function add2() {
+					$("a").attr("href","https://www.diariodemallorca.es/");
+				}
+				function add3() {
+					$("a").attr("href","https://elchapuzasinformatico.com/");
+				}
+
+	</script>
+		<input type="button" id="b1" value="Add surpresa 1"><br>
+		<input type="button" id="b2" value="Add surpresa 2"><br>
+		<input type="button" id="b3" value="Add surpresa 3"><br>
+
+		<a href="">Link surpresa</a>
+</body>
+</html> 

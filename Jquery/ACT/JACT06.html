@@ -1,0 +1,62 @@
+<html> 
+	<head> 
+		<script type="text/javascript" src="jquery-3.4.1.js"></script>
+		<title>JACT06</title> 
+<!-- Crea una página web con dos tablas. Cada tabla tiene 3 filas y 3 columnas, y cada celda tiene el mismo texto "APAGADO". Cuando presionamos un botón, el texto dentro de la primera tabla debe cambiar a "ON", pero la segunda tabla no debe cambiar en absoluto.-->
+	
+	</head> 
+	<body> 
+		<script type="text/javascript">
+			
+			$(document).ready(function initEvents() { 
+				$("#b1").click(modifyText);
+
+			});
+ 
+
+			function modifyText() { 
+				$("#t1 td").text("ON");  //seleciona un elemento dentro de outro elemento
+			} 
+ 
+
+		</script>
+		<input type="button" value="ON" id="b1"><br> 
+		<br>
+		<table id="t1" border="1"> 
+			<tr> 
+				<th>apagado</th>
+				<th>apagado</th>
+				<th>apagado</th>
+			</tr>
+			<tr>
+				<td>apagado</td>
+				<td>apagado</td> 
+				<td>apagado</td>
+			</tr>
+			<tr>
+				<td>apagado</td>
+				<td>apagado</td> 
+				<td>apagado</td>
+			</tr>
+		</table>
+		<br>
+		<table id="t2" border="1"> 
+			<tr> 
+				<th>apagado</th>
+				<th>apagado</th>
+				<th>apagado</th>
+			</tr>
+			<tr>
+				<td>apagado</td>
+				<td>apagado</td> 
+				<td>apagado</td>
+			</tr>
+			<tr>
+				<td>apagado</td>
+				<td>apagado</td> 
+				<td>apagado</td>
+			</tr>
+			
+		</table> 
+	</body> 
+</html> 

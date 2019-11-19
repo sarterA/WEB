@@ -1,0 +1,34 @@
+<html>
+	<head>
+		<title>ACT10 G)</title>
+<!-- Ingrese la "Sala en compañero" de 5 trabajadores, y luego imprima cuántos trabajadores "Sala están entre 500 € y 1000 €, cuántos trabajadores" Sala son más grandes que 1000 € y la suma de toda la sala. -->
+				
+				<script name="G)" type="text/javascript">
+
+					var i=1,
+ 	    more500=0,
+ 	    more1000=0,
+ 	    total=0;
+ 	        
+    while (i < 6 ) {
+      salari=parseInt(prompt("Escriu un salari"));
+      total+=salari;
+      if ( salari >= 500 && salari <=1000 ){
+      	more500++;
+      }else if( salari > 1000 ){
+        more1000++;
+      }
+    i++; 
+    }
+    document.write("Salaris de treballadors entre 500 i 1000:  " + more500);
+    document.write("<br>");
+    document.write("Salaris de treballadors de més de 1000:  " + more1000);
+    document.write("<br>");
+    document.write("La suma de tots els salaris es:  " + total);
+			
+				</script>
+	</head>
+	<body>
+
+	</body>
+</html>

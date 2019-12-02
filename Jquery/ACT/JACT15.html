@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<script type="text/javascript" src="jquery-3.4.1.js"></script>
+		<title>JACT15</title>
+
+
+
+	</head>
+	<body>
+		 <style>
+        .verde {
+            width: 250px;
+            height: 250px;
+            background-color: red;
+        }
+
+        .inicial {
+            background-color: green;
+            width: 800px;
+            height: 70px;
+        }
+
+    	</style>
+	</head>
+	<body>
+
+	<div  id="mydiv" class="inicial"></div>
+	<script>
+    	$(document).ready(function(){
+        	$("#mydiv").dblclick(function(){
+            	$(this).toggleClass("inicial").toggleClass("verde")
+        	});
+    	});
+	</script>
+	</body>
+</html>

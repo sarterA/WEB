@@ -1,0 +1,64 @@
+<html>
+	<head>
+		<script type="text/javascript" src="jquery-3.4.1.js"></script>
+		<title>JACT08</title>
+
+<!--Crea una página web con una tabla. Defina dos estilos, uno para la sección <thead> y el otro para la sección <tbody>. El uso de dos botones vincula y desvincula los dos estilos o clases.-->
+	</head>
+	<body>
+		<style type="text/css">
+			.thead { 
+				background-color: yellow; 
+				font-family: verdana; 
+				font-size:15px; 
+				border:5px; 
+				border-color: red; 
+				
+			}
+			.tbody { 
+				background-color: green; 
+				font-family: arial; 
+				font-size:10px; 
+				border:1px; 
+				border-color: yellow; 
+			} 
+		</style>
+		<script type="text/javascript">
+			$(document).ready(initEvents); 
+				function initEvents() { 
+					$("#b1").click(add); 
+					$("#b2").click(remove); 
+				}
+ 
+ 				function add() { 
+					$("tr#head").addClass("thead");
+					$("tr#body").addClass("tbody");
+				}
+ 				function remove() { 
+					$("tr#head").removeClass("thead");
+					$("tr#body").removeClass("tbody");
+ 				} 
+		</script>
+
+		<input type="button" id="b1" value="Add Class">
+		<input type="button" id="b2" value="Remove Class">
+
+		<table border="1">
+			<tr id="head"> 
+				<th>apagado</th>
+				<th>apagado</th>
+				<th>apagado</th>
+			</tr>
+			<tr id="body">
+				<td>apagado</td>
+				<td>apagado</td> 
+				<td>apagado</td>
+			</tr>
+			<tr id="body">
+				<td>apagado</td>
+				<td>apagado</td> 
+				<td>apagado</td>
+			</tr>
+	</table>
+	</body>
+</html> 

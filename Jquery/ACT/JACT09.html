@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<script type="text/javascript" src="jquery-3.4.1.js"></script>
+		<title>JACT09</title>
+
+<!--Crea una página web con dos botones. Cuando presiona el primero, debe aparecer un cuadro de alerta que muestre todo el contenido en la sección <head>. Y cuando presiona el segundo botón, debe aparecer un cuadro de alerta que muestre todo el contenido en la sección <body>.-->
+
+	</head>
+	<body>
+		
+		<button id="b1">Ver el contenido de HEAD</button>
+		<button id="b2">Ver el contenido de BODY</button>
+    	
+    	<script type="">
+        $(document).ready(function(){
+            $("#b1").click(function () {
+                alert("text: " + $ ("head").html())();
+            });
+            $("#b2").click(function () {
+                alert("text: " + $ ("body").html())();
+            });
+
+        });
+    </script>
+</body>
+</html>

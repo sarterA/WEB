@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<script type="text/javascript" src="jquery-3.4.1.js"></script>
+		<title>JACT13</title>
+
+
+
+	</head>
+	<body>
+		<div style="background-color: green; width: 200px; height: 200px;" id="mydiv"></div>
+
+		<script>
+    		$(document).ready(function(){
+
+        	$("#mydiv").mousemove(function(event){
+            	$(this).text("X:"+event.clientX+", Y: "+event.clientY);
+        	});
+        	$("#mydiv").mouseleave(function () {
+            	alert("ESTAS FUERA DEL DIV").html()();
+        	});
+    	});
+		</script>
+	</body>
+</html>

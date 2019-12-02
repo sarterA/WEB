@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<script type="text/javascript" src="jquery-3.4.1.js"></script>
+		<title>JACT20</title>
+
+
+
+	 <style>
+        #mydiv {
+            width: 250px;
+            height: 250px;
+            background-color: green;
+        }
+        #divoculto{
+            width: 250px;
+            height: 250px;
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+
+<div  id="mydiv"></div>
+<div id="divoculto"></div>
+<script>
+    $(document).ready(function(){
+        $("#mydiv").click(function(){
+            $(this).fadeOut(5000, muestrap);
+        });
+    });
+
+    $("#divoculto").hide();
+
+    function muestrap(){
+        $("#divoculto").fadeIn(5000);
+    }
+</script>
+
+</body>
+</html>

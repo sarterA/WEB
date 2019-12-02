@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<script type="text/javascript" src="jquery-3.4.1.js"></script>
+		<title>JACT16</title>
+
+
+
+	</head>
+	<body>
+		INPUT NUMERO 1 <input type="text">
+		<br>
+		INPUT NUMERO 2 <input type="text">
+		<script>
+    		$(document).ready(function(){
+        		$("input").focus(function(){
+            		$(this).css("color", "red");
+        	});
+
+        	$("input").blur(function(){
+            	$(this).css("color", "blue");
+        	});
+    		});
+		</script>
+
+	</body>
+</html>
